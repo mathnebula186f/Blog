@@ -1,0 +1,11 @@
+<%-include("partials/header");  -%> 
+<h1>Home</h1>
+<p><%= homeStartingContent    %></p> 
+<% posts.forEach(function(element){  %>
+   <h1>Day <%= element.days %></h1>
+   <h3><%= element.composedTitle %> </h3>
+   <% var truncatedPost=element.composedPost.substring(0,100)+"...." %> 
+   <p><%= truncatedPost %> <a href="/posts/<%= element.composedTitle %> " id="PostLink">Read More</a></p>
+<%});%>
+<%-include("partials/footer") ; -%>
+

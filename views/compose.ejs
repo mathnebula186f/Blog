@@ -1,0 +1,16 @@
+<%-include("partials/header")  -%>
+<h1>Compose</h1>
+<div>
+  <form action="/compose" method="post">
+    <h5 class="compose-title">Title</h5>
+    <input class="input-title" type="text" name="compose_title" autocomplete="off">
+    <div class="post-section">
+          <h5 class="compose-post">Post</h5>
+          <textarea style="height: 106px; width: 1198px;" name="compose_post" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div class="publish-btn ">
+      <button class="btn btn-primary"type="submit">Publish</button>
+    </div>
+  </form>
+</div>
+<%-include("partials/footer")  -%>
